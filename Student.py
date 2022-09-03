@@ -9,8 +9,11 @@ class Student(Person):
         pass
 
     def set_grades(self, grade_to_add):
-        pass
+        self.__grades.append(grade_to_add)
 
     def get_grades(self):
-        pass
+        return self.__grades
+
+    def clean_grades(self):
+        self.__grades.clear()
 
